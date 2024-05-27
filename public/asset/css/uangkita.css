@@ -1,0 +1,499 @@
+* {
+    font-family: "DM Sans", sans-serif;
+}
+body {
+    background-color: #f9f9f9;
+}
+
+.col-lg-5{
+    display: block;
+    margin-top: 50px; /* Adjust this value to move the image down */
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+.line1 {
+    border-bottom: 5px solid #9745fd;
+    width: 8%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.line2 {
+    border-bottom: 5px solid #9745fd;
+    width: 15%;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    margin-left: 42%;
+    margin-top: 0;
+}
+.line3 {
+    border-bottom: 5px solid #9745fd;
+    width: 25%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.line4 {
+    border-bottom: 5px solid #9745fd;
+    width: 10%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.line5 {
+    border-bottom: 5px solid #9745fd;
+    width: 10%;
+    border-radius: 10px;
+    margin-bottom: 6rem;
+}
+.jumbotron {
+    background-image: url("/asset/jumbotron.png");
+}
+.display-5 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 70px;
+}
+.deskripsi {
+    color: #fff;
+    font-size: 16px;
+    text-align: justify;
+    display: inline;
+}
+#uangbiru {
+    color: #9745fd;
+}
+.mulaisekarang {
+    margin-top: 1.5rem;
+}
+button {
+    width: 210px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #e9eaec;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #9745fd;
+}
+
+button,
+button span {
+    transition: 200ms;
+}
+
+button .text {
+    transform: translateX(20px);
+    color: white;
+    font-weight: bold;
+}
+
+button .icon {
+    position: absolute;
+    transform: translateX(140px);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button svg {
+    width: 15px;
+    fill: #eee;
+}
+
+button:hover {
+    background: #9745fd;
+}
+
+button:hover .text {
+    color: transparent;
+}
+
+button:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(25px);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active .icon svg {
+    transform: scale(1);
+}
+/* end of jumbotron */
+
+.trusted {
+    background-color: #0e1f2e;
+    color: #fff;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.trusted .container .row {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.trusted .teks {
+    margin-bottom: 60px;
+}
+
+/* end of trusted section */
+.card-pakar .container {
+    margin-top: 0;
+    padding-bottom: 10rem;
+}
+.card {
+    border-radius: 26px;
+    width: 18rem;
+    background-color: #0e1f2e;
+    color: #fff;
+    border: none;
+}
+.card-pakar {
+    text-align: center;
+    padding-top: 4rem;
+    /* background-color: #f9f9f9; */
+    margin-top: 0px;
+    padding-bottom: 3rem;
+}
+.card-img-top {
+    border-radius: 24px 24px 0px 0px;
+}
+.card-pakar .row {
+    margin-top: 4rem;
+}
+.pakarfinansial {
+    font-weight: 800;
+    font-size: 56px;
+}
+/* end of card pakar */
+.about {
+    font-weight: 800;
+    font-size: 56px;
+}
+
+.regular {
+    font-weight: 600;
+}
+.tekskanan {
+    text-align: justify;
+}
+.tekskanan h3 {
+    margin-top: 3rem;
+    font-size: 46px;
+}
+.tekskanan p {
+    margin-top: 3rem;
+    margin-left: 28rem;
+}
+
+/* end of card pakar */
+.card-kebutuhan {
+    background-color: #eff2f7;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.card-kebutuhan h2 {
+    font-weight: 800;
+    /* margin-bottom: 4rem; */
+    padding-top: 4rem;
+    font-size: 46px;
+}
+
+/* end of card kebutuhan */
+
+.dukungan {
+    background-image: url("/asset/bgdukungan.svg");
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+.dukungan h3 {
+    font-weight: 800;
+    font-size: 40px;
+    color: #ecff0e;
+}
+.dukungan p {
+    color: #fff;
+    text-align: justify;
+}
+.hubungikami {
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-right: 3rem;
+    display: grid;
+    justify-content: center;
+}
+
+.hubungibtn {
+    color: #fff;
+    padding: 1.2rem;
+    border: #fff 1px solid;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.hubungibtn:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #0e1f2e;
+    transition: all 0.3s ease;
+}
+
+.hubungibtn svg {
+    width: 30px;
+    /* margin-left: 10px; */
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+}
+
+.hubungibtn:hover svg {
+    transform: translateX(5px);
+}
+
+.hubungi-text {
+    margin-left: 30px;
+}
+/* end of dukungan  */
+.card-why {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.card-why h2 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 46px;
+    margin-bottom: 2rem;
+}
+
+/* end of card why */
+
+/* start css kontak */
+.kontak {
+    padding-bottom: 10rem;
+}
+.kontak h2 {
+    font-size: 67px;
+    font-weight: 800;
+}
+.kontak .card {
+    background-color: #fff;
+    color: #0e0e0e;
+    margin: auto;
+    width: auto;
+    height: 550px;
+}
+
+.kontak .card.form {
+    margin-top: 1rem;
+}
+.form h4 {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.create {
+    margin-top: 2rem;
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #9745fd;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: center;
+}
+.form input {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #eff2f7;
+    border: none;
+    padding: 10px;
+    padding-left: 2rem;
+}
+.catatan {
+    height: 4rem;
+}
+
+/* end of section kontak */
+
+/* start of section testimonial  */
+
+.client {
+    font-size: 56px;
+    font-weight: 800;
+}
+.outerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerdiv {
+    transform: scale(0.9);
+    margin: 1rem;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-rows: repeat(2, 22rem);
+    grid-template-columns: repeat(4, 17rem);
+}
+.eachdiv {
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    color: white;
+}
+.div1 {
+    background: #733fc8;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 25rem;
+}
+.div2 {
+    background: #49556b;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.div3 {
+    background: white;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: black;
+}
+.div4 {
+    background: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: black;
+}
+.div5 {
+    background: #18202d;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.userdetails {
+    display: flex;
+}
+.imgbox {
+    margin-right: 1rem;
+}
+.imgbox img {
+    border-radius: 50%;
+    width: 2rem;
+    border: 2px solid #cec5c5;
+}
+.detbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detbox p {
+    margin: 0;
+}
+.detbox .name {
+    color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+.detbox .name.dark {
+    color: #49505a;
+}
+.detbox .designation {
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.detbox .designation.dark {
+    color: #49505a;
+}
+.review h4 {
+    font-size: 1.4rem;
+    color: #f3deff;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+.review.dark h4 {
+    color: #4b5258;
+}
+.review p {
+    font-size: 0.95rem;
+    color: #f3deff;
+    font-weight: 500;
+    opacity: 50%;
+    line-height: 1.5;
+}
+.review.dark p {
+    color: #0e0e0e;
+}
+.attribution {
+    font-size: 1rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+}
+.attribution a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .display-5 {
+        font-size: 70px;
+    }
+    .innerdiv {
+        transform: scale(0.7);
+    }
+    #gambar {
+        width: 100%;
+    }
+
+    .hubungibtn {
+        margin-right: 6rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #gambar {
+        width: 100%;
+    }
+    .display-5 {
+        font-size: 50px;
+    }
+    .innerdiv {
+        transform: scale(0.6);
+    }
+}
+@media only screen and (max-width: 400px) {
+    /* h1{
+        font-size: ;
+    } */
+    #gambar {
+        width: 100%;
+    }
+    .display-5 {
+        font-size: 50px;
+    }
+    .div1 {
+        background-position-x: 10rem;
+    }
+    .innerdiv {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        margin: 2rem;
+        margin-bottom: 5rem;
+    }
+    .attribution {
+        position: relative;
+    }
+}

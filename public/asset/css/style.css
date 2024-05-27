@@ -1,0 +1,215 @@
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.fa-phone,
+.fa-envelope {
+    margin-right: 5px;
+}
+
+.icon {
+    position: relative;
+    border-color: #0e1f2e;
+    border-style: 0.8 solid;
+    border-radius: 50%;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    border-color: #0e1f2e;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.icon:hover span,
+.icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.facebook:hover,
+.facebook:hover .tooltip,
+.facebook:hover .tooltip::before {
+    background: #0e1f2e;
+    color: #ecff0e;
+}
+
+.twitter:hover,
+.twitter:hover .tooltip,
+.twitter:hover .tooltip::before {
+    background: #0e1f2e;
+    color: #ecff0e;
+}
+
+.instagram:hover,
+.instagram:hover .tooltip,
+.instagram:hover .tooltip::before {
+    background: #0e1f2e;
+    color: #ecff0e;
+}
+
+.youtube:hover,
+.youtube:hover .tooltip,
+.youtube:hover .tooltip::before {
+    background: #0e1f2e;
+    color: #ecff0e;
+}
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+.slider::before,
+.slider::after {
+    background: linear-gradient(
+        to right,
+        white 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+.jalan a {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 540px) {
+    .tekskanan .deskiri {
+        margin-left: 0;
+    }
+    #gambar {
+        width: 90%;
+        justify-content: center;
+    }
+    #gambartokkiri {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar-nav.d-flex {
+        flex-direction: column;
+        padding-top: 10px; /* Adjust as needed */
+    }
+
+    .navbar-nav.d-flex .nav-item {
+        margin-bottom: 10px; /* Adjust as needed */
+    }
+
+    #abc {
+        display: none;
+    }
+}
+
+.active {
+    border-bottom: 2px solid #9745fd;
+    font-weight: 600;
+    color: #9745fd;
+}
+
+#button_respon {
+    width: auto;
+    border: none;
+    box-shadow: none;
+}
+
+#button_respon:hover {
+    background: none;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.btnlogin{
+    margin: auto;
+    color: #ffffff;
+    padding: auto;
+    width: 5rem;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+}
+.btnregister{
+    margin: auto;
+    color: #ffffff;
+    padding: auto;
+    width: 5rem;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+    background-color: none;
+    border: #0e1f2e;
+}
