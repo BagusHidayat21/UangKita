@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .goal {
+    text-align: center;
+  }
+
+  .saldo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .saldo span:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .saldo span:last-child {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .progress .bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    margin-right: 10px;
+  }
+
+  .progress .bar .fill {
+    width: 10%;
+    height: 100%;
+    background-color: #007bff;
+  }
+
+  .progress span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
