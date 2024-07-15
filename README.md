@@ -6,6 +6,7 @@
 
 [![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -28,9 +29,11 @@ The application bridges the gap between complex budgeting tools and intuitive us
 ### Backend & Core Framework
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP_8.1+-777BB4?style=flat-square&logo=php&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase_PostgreSQL-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL_Database-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
 - **Framework**: Laravel 10.x (PHP 8.1+)
+- **Database Engine**: **Supabase Hosted PostgreSQL** (Dedicated Schema `uangkita`) with MySQL fallback.
 - **Architecture**: Model-View-Controller (MVC), Blade Templating, Middleware Pipeline
 - **Database ORM**: Eloquent ORM with strict Foreign Key constraints and automated model relations
 - **Authentication**: Laravel Session Guard with Session Fixation & IDOR Security Safeguards
