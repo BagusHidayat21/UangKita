@@ -418,22 +418,40 @@ button.mulaisekarang:hover span.icon { width: 100%; }
 .partner-logo { opacity: 0.75; max-height: 36px; transition: opacity 0.25s; }
 .partner-logo:hover { opacity: 1; }
 
+.bg-purple-gradient {
+    background: linear-gradient(135deg, #9745FD 0%, #7B2FD4 100%) !important;
+}
+
 .split-card {
     border-radius: 16px !important;
     overflow: hidden;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .split-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12) !important;
 }
 .split-card .split-header {
-    min-height: 110px;
+    min-height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 24px;
+    flex-shrink: 0;
 }
-.split-card .split-body { padding: 24px; }
+.split-card .split-body {
+    padding: 24px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+.split-card .split-body p {
+    margin-bottom: 0;
+    width: 100%;
+}
 
 .icon-box-purple {
     background-color: var(--purple-light);
